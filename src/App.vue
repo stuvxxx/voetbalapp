@@ -1,30 +1,66 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <HeaderMain />
   <router-view />
+  <nav>
+    <router-link to="/">
+      <img src="./assets/home-icon.png" />
+    </router-link>
+    <router-link to="/spelers">
+      <img src="./assets/users-icon.png" />
+    </router-link>
+    <router-link to="/stats">
+      <img src="./assets/stats-icon.png" />
+    </router-link>
+    <router-link to="/wedstrijden">
+      <img src="./assets/calendar-icon.png" />
+    </router-link>
+  </nav>
 </template>
 
+<script>
+import HeaderMain from "./components/HeaderMain.vue";
+
+export default {
+  components: {
+    HeaderMain,
+  },
+};
+</script>
+
 <style>
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(255, 255, 255);
 }
 
 nav {
-  padding: 30px;
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  border: 2px solid white;
+  background: black;
+  padding: 5px;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  background: rgb(255, 117, 47);
 }
 </style>
