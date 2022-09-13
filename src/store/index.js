@@ -107,7 +107,7 @@ export default createStore({
             kaarten: 0,
             mins: 0,
           },
-          Oscar: {
+          oscar: {
             naam: "Oscar Verheul",
             leeftijd: "?",
             foto: "",
@@ -118,7 +118,7 @@ export default createStore({
             kaarten: 0,
             mins: 180,
           },
-          Jip: {
+          jip: {
             naam: "Jip Verwiel",
             leeftijd: "?",
             foto: "",
@@ -211,6 +211,8 @@ export default createStore({
     },
     wedstrijden: {
       ZeeburgiaFIT: {
+        datum: "04-09-2022",
+        tijdstip: "11:30",
         uitslag: {
           thuis: 1,
           uit: 1,
@@ -229,6 +231,7 @@ export default createStore({
         ],
       },
       FITJOS: {
+        datum: "11-09-2022",
         uitslag: {
           thuis: 4,
           uit: 2,
@@ -269,6 +272,7 @@ export default createStore({
         ],
       },
       FITFORTIUS: {
+        datum: "18-09-2022",
         uitslag: {
           thuis: undefined,
           uit: undefined,
@@ -277,7 +281,11 @@ export default createStore({
       },
     },
   },
-  getters: {},
+  getters: {
+    getAllWedstrijden() {
+      return this.state.wedstrijden;
+    },
+  },
   mutations: {},
   actions: {},
   modules: {},
