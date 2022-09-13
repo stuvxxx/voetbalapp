@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <h1>Wedstrijden</h1>
+  <div class="wedstrijd-wrapper">
     <WedstrijdCard v-for="wedstrijd in wedstrijden" :key="wedstrijd.id" />
   </div>
 </template>
@@ -88,3 +89,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.wedstrijd-wrapper {
+  display: flex;
+  overflow-x: hidden;
+}
+</style>
