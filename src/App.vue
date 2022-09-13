@@ -49,7 +49,7 @@ nav {
   display: flex;
   overflow: hidden;
   position: fixed;
-  bottom: 5px;
+  bottom: 10px;
   width: 100%;
   justify-content: space-evenly;
 }
