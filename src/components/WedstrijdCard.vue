@@ -4,9 +4,10 @@
     :key="wedstrijd.id"
     class="card-wrapper"
   >
-    <div>
-      {{ wedstrijd.thuis.team }} -
-      {{ wedstrijd.uit.team }}
+    <div class="card-header">
+      <div class="logo-team thuis"></div>
+      <div class="score"></div>
+      <div class="logo-team uit"></div>
     </div>
   </div>
 </template>
