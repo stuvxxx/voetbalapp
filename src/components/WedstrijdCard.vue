@@ -20,10 +20,7 @@ export default {
 
 <style scoped>
 .card-wrapper {
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 30px 15px 15px 15px;
   display: flex;
   width: 400px;
   height: 250px;
