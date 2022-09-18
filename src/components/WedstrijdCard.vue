@@ -1,10 +1,20 @@
 <template>
-  <div class="card-wrapper"></div>
+  <div
+    v-for="wedstrijd in wedstrijden"
+    :key="wedstrijd.id"
+    class="card-wrapper"
+  >
+    <div>
+      {{ wedstrijd.thuis.team }} -
+      {{ wedstrijd.uit.team }}
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "WedstrijdCard",
+  props: ["wedstrijden"],
 };
 </script>
 
@@ -12,10 +22,15 @@ export default {
 .card-wrapper {
   margin: 0 auto;
   margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   display: flex;
-  width: 300px;
+  width: 400px;
   height: 250px;
   background: rgb(255, 255, 255);
   border: 2px solid orange;
+  color: black;
+  justify-content: center;
+  flex: 0 0 auto;
 }
 </style>
