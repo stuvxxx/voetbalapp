@@ -22,13 +22,13 @@ export default {
 <style scoped>
 .card-wrapper {
   margin: 30px 15px 15px 15px;
-  display: flex;
   width: 400px;
   height: 250px;
   background: rgb(255, 255, 255);
   border: 2px solid orange;
   color: black;
-  justify-content: center;
   flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
 }
 </style>
