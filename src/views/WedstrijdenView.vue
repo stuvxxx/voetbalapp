@@ -17,8 +17,8 @@ export default {
       wedstrijden: [
         {
           id: 1,
-          thuis: { team: "Zeeburgia 3", logo: "./assets/zeeburgia-logo.png" },
-          uit: { team: "FIT 7", logo: "./assets/fit-logo.png" },
+          thuis: { team: "Zeeburgia 3", logo: "zeeburgia-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
           datum: "04-09-2022",
           tijdstip: "11:30",
           uitslag: {
@@ -41,8 +41,8 @@ export default {
         },
         {
           id: 2,
-          thuis: { team: "FIT 7", logo: "./assets/fit-logo.png" },
-          uit: { team: "JOS 3", logo: "./assets/jos-logo.png" },
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "JOS 3", logo: "jos-logo.png" },
           datum: "11-09-2022",
           tijdstip: "15:15",
           uitslag: {

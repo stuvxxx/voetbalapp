@@ -5,9 +5,17 @@
     class="card-wrapper"
   >
     <div class="card-header">
-      <div class="logo-team thuis"></div>
-      <div class="score"></div>
-      <div class="logo-team uit"></div>
+      <div class="logo-team thuis">
+        <img :src="require(`@/assets/${wedstrijd.thuis.logo}`)" />
+        {{ wedstrijd.thuis.team }}
+      </div>
+      <div class="score">
+        {{ wedstrijd.uitslag.thuis }} - {{ wedstrijd.uitslag.uit }}
+      </div>
+      <div class="logo-team uit">
+        <img :src="require(`@/assets/${wedstrijd.uit.logo}`)" />
+        {{ wedstrijd.uit.team }}
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +37,14 @@ export default {
   color: black;
   flex: 0 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+.logo-team {
+  display: flex;
+  flex-direction: column;
+}
+.logo-team img {
+  height: 75px;
+  width: 130px;
 }
 </style>
