@@ -31,7 +31,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Orbitron:wght@400;799&display=swap");
 .card-wrapper {
   margin: 30px 15px 15px 15px;
-  width: 400px;
+  width: 300px;
   height: 250px;
   background: rgb(255, 255, 255);
   color: black;
