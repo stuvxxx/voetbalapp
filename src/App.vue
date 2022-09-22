@@ -31,7 +31,7 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background: black;
+  background: rgb(12, 11, 11);
   height: 100vh;
   width: 100vw;
   overflow: hidden;
