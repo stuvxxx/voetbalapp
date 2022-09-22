@@ -19,6 +19,10 @@
           {{ wedstrijd.uit.team }}
         </div>
       </div>
+      <div class="events-wrapper">
+        <div class="events-thuis"></div>
+        <div class="events-uit"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -112,5 +116,22 @@ export default {
   margin: 0 auto;
   width: 74px;
   height: 84px;
+}
+.events-wrapper {
+  margin: 0 auto;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.274);
+  display: flex;
+  flex-direction: row;
+}
+.events-thuis {
+  width: 150px;
+  height: 100%;
+  border-right: 2px dotted black;
+}
+.events-uit {
+  width: 150px;
+  height: 100%;
 }
 </style>
