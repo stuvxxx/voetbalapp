@@ -35,6 +35,8 @@ export default {
 .card-wrapper {
   position: relative;
   margin: 20px;
+  border: rgb(39, 37, 34) solid 5px;
+  border-radius: 8px;
 }
 
 .card-wrapper::before {
@@ -57,7 +59,6 @@ export default {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
 }
 
 .score {
