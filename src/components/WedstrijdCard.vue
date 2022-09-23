@@ -20,8 +20,22 @@
         </div>
       </div>
       <div class="events-wrapper">
-        <div class="events-thuis"></div>
-        <div class="events-uit"></div>
+        <div
+          v-for="goal in wedstrijd.goals"
+          :key="goal.goalwie"
+          class="score-wrapper"
+        >
+          <div class="score-thuis" v-if="goal.score == 'thuis'">
+            {{ goal.goalwie }}
+            <div class="minuten">`{{ goal.minuut }}</div>
+            <div></div>
+          </div>
+          <div class="score-uit" v-if="goal.score == 'uit'">
+            <div></div>
+            <div class="minuten">`{{ goal.minuut }}</div>
+            {{ goal.goalwie }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -57,7 +71,7 @@ export default {
 
 .card-wrapper-inside {
   margin: 15px 15px 15px 15px;
-  width: 350px;
+  width: 300px;
   height: 250px;
   color: black;
   flex: 0 0 auto;
@@ -69,7 +83,6 @@ export default {
   font-family: "Orbitron", sans-serif;
   font-weight: 800;
   align-self: center;
-  font-size: 30px;
   color: rgba(0, 0, 0, 0.845);
 }
 
@@ -78,15 +91,15 @@ export default {
   color: rgb(214, 139, 40);
 }
 .score :nth-child(2) {
-  font-size: 30px;
+  font-size: 15px;
   color: rgb(0, 0, 0);
   transform: translateY(-10px);
 }
 
 .card-header {
   background-color: white;
-  margin: 20px 10px;
   margin-right: 15px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: row;
   align-content: space-between;
@@ -104,34 +117,44 @@ export default {
   box-shadow: 10px 5px;
 }
 .logo-team {
-  padding: 10px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
   width: 100px;
   justify-content: center;
   align-content: center;
-  padding-bottom: 5px;
 }
 .logo-team img {
   margin: 0 auto;
-  width: 74px;
-  height: 84px;
+  width: 64px;
+  height: 74px;
 }
 .events-wrapper {
-  margin: 0 auto;
+  margin: 10px auto;
   width: 300px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.274);
+  background-color: rgba(255, 255, 255, 0.568);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-family: "Orbitron", sans-serif;
+  font-size: 10px;
+}
+.score-wrapper {
+  margin-top: 5px;
+  border-bottom: 1px dotted black;
+}
+.score-thuis {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.events-thuis {
-  width: 150px;
-  height: 100%;
-  border-right: 2px dotted black;
+.score-uit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.events-uit {
-  width: 150px;
-  height: 100%;
+.minuten {
+  position: absolute;
+  transform: translateX(138px);
 }
 </style>

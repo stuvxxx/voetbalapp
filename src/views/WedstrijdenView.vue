@@ -65,6 +65,7 @@ export default {
             {
               minuut: 45,
               score: "uit",
+              goalwie: "Henk de Peer",
             },
             {
               minuut: 60,
@@ -81,6 +82,7 @@ export default {
             {
               minuut: 85,
               score: "uit",
+              goalwie: "Ruud Visman",
             },
           ],
         },
