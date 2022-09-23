@@ -134,10 +134,10 @@ export default {
   width: 300px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.568);
-  border-radius: 10px;
+  border-radius: 8px;
   color: rgb(0, 0, 0);
   font-family: "Orbitron", sans-serif;
-  font-size: 11 px;
+  font-size: 11px;
   font-weight: 600;
 }
 .score-wrapper {
