@@ -137,11 +137,12 @@ export default {
   border-radius: 10px;
   color: rgb(0, 0, 0);
   font-family: "Orbitron", sans-serif;
-  font-size: 10px;
+  font-size: 11 px;
+  font-weight: 600;
 }
 .score-wrapper {
   margin-top: 5px;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.356);
 }
 .score-thuis {
   display: flex;
