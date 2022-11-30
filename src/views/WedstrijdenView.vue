@@ -24,6 +24,7 @@ export default {
             thuis: 1,
             uit: 1,
           },
+          beker: true,
           goals: [
             {
               minuut: 44,
@@ -48,6 +49,7 @@ export default {
             thuis: 4,
             uit: 2,
           },
+          beker: true,
           goals: [
             {
               minuut: 25,
@@ -82,6 +84,409 @@ export default {
               minuut: 85,
               score: "uit",
               goalwie: "Henk de Peer",
+            },
+          ],
+        },
+        {
+          id: 3,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "Arsenal 8", logo: "arsenal-logo.png" },
+          datum: "25-09-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 1,
+            uit: 5,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 22,
+              score: "uit",
+              goalwie: "Kjepper Snip",
+            },
+            {
+              minuut: 35,
+              score: "uit",
+              goalwie: "Jos Knoopei",
+            },
+            {
+              minuut: 40,
+              score: "uit",
+              goalwie: "Kjepper Snip",
+            },
+            {
+              minuut: 50,
+              score: "thuis",
+              goalwie: "????",
+            },
+            {
+              minuut: 60,
+              score: "uit",
+              goalwie: "Harry Droplul",
+            },
+            {
+              minuut: 65,
+              score: "uit",
+              goalwie: "Fritsie",
+            },
+          ],
+        },
+        {
+          id: 4,
+          thuis: { team: "Geinburgia 3", logo: "geinburgia-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "02-10-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 2,
+            uit: 2,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 22,
+              score: "uit",
+              goalwie: "Daniel",
+            },
+            {
+              minuut: 35,
+              score: "uit",
+              goalwie: "????",
+            },
+            {
+              minuut: 80,
+              score: "thuis",
+              goalwie: "Joey Doekhie",
+            },
+            {
+              minuut: 93,
+              score: "thuis",
+              goalwie: "Dave Jansen",
+            },
+          ],
+        },
+        {
+          id: 5,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "FORTIUS 3", logo: "fortius-logo.png" },
+          datum: "04-10-2022",
+          tijdstip: "20:00",
+          uitslag: {
+            thuis: 5,
+            uit: 2,
+          },
+          beker: true,
+          goals: [
+            {
+              minuut: 10,
+              score: "thuis",
+              goalwie: "????",
+              assistwie: "?",
+            },
+            {
+              minuut: 35,
+              score: "thuis",
+              goalwie: "????",
+              assistwie: "?",
+            },
+            {
+              minuut: 46,
+              score: "thuis",
+              goalwie: "????",
+            },
+            {
+              minuut: 60,
+              score: "uit",
+              goalwie: "Los Mendos",
+              assistwie: "?",
+            },
+            {
+              minuut: 65,
+              score: "thuis",
+              goalwie: "????",
+              assistwie: "?",
+            },
+            {
+              minuut: 75,
+              score: "thuis",
+              goalwie: "Lauran",
+            },
+            {
+              minuut: 85,
+              score: "uit",
+              goalwie: "Garcia",
+            },
+          ],
+        },
+        {
+          id: 6,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "CTO 3", logo: "cto-logo.png" },
+          datum: "09-10-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 2,
+            uit: 6,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 10,
+              score: "uit",
+              goalwie: "Rene Dolstra",
+            },
+            {
+              minuut: 35,
+              score: "uit",
+              goalwie: "Roy Bruil",
+            },
+            {
+              minuut: 41,
+              score: "thuis",
+              goalwie: "????",
+            },
+            {
+              minuut: 60,
+              score: "uit",
+              goalwie: "Edward Lion",
+            },
+            {
+              minuut: 65,
+              score: "uit",
+              goalwie: "Stefano Antonia",
+              assistwie: "?",
+            },
+            {
+              minuut: 75,
+              score: "uit",
+              goalwie: "Stefano Antonia",
+            },
+            {
+              minuut: 85,
+              score: "uit",
+              goalwie: "Tommy Janssen",
+            },
+            {
+              minuut: 86,
+              score: "thuis",
+              goalwie: "????",
+            },
+          ],
+        },
+        {
+          id: 7,
+          thuis: { team: "G.M'meer 3", logo: "geuzen-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "16-10-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 8,
+            uit: 3,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 10,
+              score: "thuis",
+              goalwie: "Felix Blom",
+            },
+            {
+              minuut: 12,
+              score: "thuis",
+              goalwie: "Rik Blekkenhorst",
+            },
+            {
+              minuut: 20,
+              score: "thuis",
+              goalwie: "Reduane Dahmani",
+            },
+            {
+              minuut: 35,
+              score: "thuis",
+              goalwie: "Sacha Overmars",
+            },
+            {
+              minuut: 41,
+              score: "uit",
+              goalwie: "Marc",
+            },
+            {
+              minuut: 43,
+              score: "thuis",
+              goalwie: "Gianni Beets",
+            },
+            {
+              minuut: 65,
+              score: "thuis",
+              goalwie: "Sacha Overmars",
+              assistwie: "?",
+            },
+            {
+              minuut: 75,
+              score: "uit",
+              goalwie: "Oscar",
+            },
+            {
+              minuut: 80,
+              score: "thuis",
+              goalwie: "Felix Blom",
+              assistwie: "?",
+            },
+            {
+              minuut: 85,
+              score: "uit",
+              goalwie: "Fakkel",
+            },
+            {
+              minuut: 88,
+              score: "thuis",
+              goalwie: "Raz van Houts",
+            },
+          ],
+        },
+        {
+          id: 8,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "Abcoude 6", logo: "abcoude-logo.png" },
+          datum: "30-10-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 2,
+            uit: 2,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 21,
+              score: "thuis",
+              goalwie: "????",
+            },
+            {
+              minuut: 65,
+              score: "thuis",
+              goalwie: "Marc",
+            },
+            {
+              minuut: 75,
+              score: "uit",
+              goalwie: "Rodney Griffioen",
+            },
+            {
+              minuut: 89,
+              score: "uit",
+              goalwie: "Sander Bon",
+            },
+          ],
+        },
+        {
+          id: 9,
+          thuis: { team: "Hoofddorp 8", logo: "hoofddorp-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "06-11-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 6,
+            uit: 0,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 21,
+              score: "thuis",
+              goalwie: "Manuel de Boer",
+            },
+            {
+              minuut: 35,
+              score: "thuis",
+              goalwie: "Dennis Dat",
+            },
+            {
+              minuut: 40,
+              score: "thuis",
+              goalwie: "Jeroen Dat",
+            },
+            {
+              minuut: 44,
+              score: "thuis",
+              goalwie: "David Kluin",
+            },
+            {
+              minuut: 60,
+              score: "thuis",
+              goalwie: "David Kluin",
+            },
+            {
+              minuut: 75,
+              score: "thuis",
+              goalwie: "Tom Vols",
+            },
+          ],
+        },
+        {
+          id: 10,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "WV-HEDW 10", logo: "hedw-logo.png" },
+          datum: "13-11-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 2,
+            uit: 2,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 21,
+              score: "thuis",
+              goalwie: "Oscar",
+            },
+            {
+              minuut: 41,
+              score: "thuis",
+              goalwie: "Peppie",
+            },
+            {
+              minuut: 60,
+              score: "uit",
+              goalwie: "Liam Langereis",
+            },
+            {
+              minuut: 89,
+              score: "uit",
+              goalwie: "Davey Wilmans",
+            },
+          ],
+        },
+        {
+          id: 11,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "Zeebugia 8", logo: "zeeburgia-logo.png" },
+          datum: "27-11-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: 1,
+            uit: 3,
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 21,
+              score: "thuis",
+              goalwie: "e.g.",
+            },
+            {
+              minuut: 41,
+              score: "uit",
+              goalwie: "Sjors Meinders",
+            },
+            {
+              minuut: 60,
+              score: "uit",
+              goalwie: "Eli Ersahin",
+            },
+            {
+              minuut: 89,
+              score: "uit",
+              goalwie: "Lorenzo Fraser",
             },
           ],
         },

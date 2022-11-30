@@ -88,8 +88,9 @@ export default {
 }
 
 .score :nth-child(1) {
-  font-size: 10px;
+  font-size: 8px;
   color: rgb(214, 139, 40);
+  white-space: nowrap;
 }
 .score :nth-child(2) {
   font-size: 15px;
