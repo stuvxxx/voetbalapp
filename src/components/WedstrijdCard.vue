@@ -27,12 +27,12 @@
         >
           <div class="score-thuis" v-if="goal.score == 'thuis'">
             {{ goal.goalwie }}
-            <div class="minuten">`{{ goal.minuut }}</div>
+            <div class="minuten thuis">`{{ goal.minuut }}</div>
             <div></div>
           </div>
           <div class="score-uit" v-if="goal.score == 'uit'">
             <div></div>
-            <div class="minuten">`{{ goal.minuut }}</div>
+            <div class="minuten uit">`{{ goal.minuut }}</div>
             {{ goal.goalwie }}
           </div>
         </div>
@@ -52,6 +52,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Orbitron:wght@400;799&display=swap");
 .card-wrapper {
   position: relative;
+  height: 350px;
   margin: 20px;
   border: rgb(39, 37, 34) solid 5px;
   border-radius: 8px;
@@ -148,14 +149,21 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 10px;
 }
 .score-uit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 10px;
 }
+
 .minuten {
   position: absolute;
   transform: translateX(138px);
+}
+.minuten.thuis {
+  position: absolute;
+  transform: translateX(128px);
 }
 </style>

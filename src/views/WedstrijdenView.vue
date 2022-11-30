@@ -1,5 +1,4 @@
 <template>
-  <h1>Wedstrijden</h1>
   <div class="wedstrijd-wrapper">
     <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
@@ -82,7 +81,7 @@ export default {
             {
               minuut: 85,
               score: "uit",
-              goalwie: "Ruud Visman",
+              goalwie: "Henk de Peer",
             },
           ],
         },
