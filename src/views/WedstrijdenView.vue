@@ -709,6 +709,5 @@ export default {
 }
 img {
   height: 40px;
-  background: blue;
 }
 </style>
