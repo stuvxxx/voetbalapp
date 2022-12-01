@@ -2,6 +2,7 @@
   <div
     v-for="wedstrijd in wedstrijden"
     :key="wedstrijd.id"
+    :id="wedstrijd.datum"
     class="card-wrapper"
   >
     <div class="card-wrapper-inside">
@@ -19,7 +20,7 @@
           {{ wedstrijd.uit.team }}
         </div>
       </div>
-      <div class="events-wrapper">
+      <div v-if="wedstrijd.uitslag.thuis != '-'" class="events-wrapper">
         <div
           v-for="goal in wedstrijd.goals"
           :key="goal.goalwie"
@@ -36,6 +37,9 @@
             {{ goal.goalwie }}
           </div>
         </div>
+      </div>
+      <div v-if="wedstrijd.uitslag.thuis == '-'" class="time-wrapper">
+        {{ wedstrijd.tijdstip }}
       </div>
     </div>
   </div>
@@ -166,5 +170,13 @@ export default {
 .minuten.thuis {
   position: absolute;
   transform: translateX(128px);
+}
+.time-wrapper {
+  margin-top: 60px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 50px;
+  color: rgb(214, 139, 40);
+  background-color: rgba(0, 0, 0, 0.767);
+  border-radius: 10px;
 }
 </style>

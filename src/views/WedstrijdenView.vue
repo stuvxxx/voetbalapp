@@ -1,4 +1,5 @@
 <template>
+  <div id="under-text">HIER</div>
   <div class="wedstrijd-wrapper">
     <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
@@ -490,8 +491,202 @@ export default {
             },
           ],
         },
+        {
+          id: 12,
+          thuis: { team: "WEESP 3", logo: "weesp-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "04-12-2022",
+          tijdstip: "10:00",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 13,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "Oudekerk 4", logo: "oudekerk-logo.png" },
+          datum: "11-12-2022",
+          tijdstip: "12:30",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 14,
+          thuis: { team: "Zeeburgia 13", logo: "zeeburgia-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "29-01-2023",
+          tijdstip: "12:00",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 15,
+          thuis: { team: "Arsenal 8", logo: "arsenal-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "05-02-2023",
+          tijdstip: "16:30",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 16,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "Geinburgia 3", logo: "geinburgia-logo.png" },
+          datum: "12-02-2023",
+          tijdstip: "15:00",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 17,
+          thuis: { team: "CTO 3", logo: "cto-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "05-03-2023",
+          tijdstip: "12:00",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 18,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "G.M'meer 3", logo: "geuzen-logo.png" },
+          datum: "12-03-2023",
+          tijdstip: "14:30",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 19,
+          thuis: { team: "Abcoude", logo: "abcoude-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "19-03-2023",
+          tijdstip: "14:30",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 20,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "Hoofddorp 8", logo: "hoofddorp-logo.png" },
+          datum: "26-03-2023",
+          tijdstip: "14:30",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 21,
+          thuis: { team: "WV-HEDW 10", logo: "hedw-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "02-04-2023",
+          tijdstip: "12:00",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 22,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "Zeeburgia 13", logo: "zeeburgia-logo.png" },
+          datum: "23-04-2023",
+          tijdstip: "14:30",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 23,
+          thuis: { team: "Zeeburgia 8", logo: "zeeburgia-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "23-04-2023",
+          tijdstip: "12:00",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 24,
+          thuis: { team: "Ouderkerk 4", logo: "oudekerk-logo.png" },
+          uit: { team: "FIT 7", logo: "fit-logo.png" },
+          datum: "14-05-2023",
+          tijdstip: "14:00",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
+        {
+          id: 25,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "WEESP 3", logo: "weesp-logo.png" },
+          datum: "21-05-2023",
+          tijdstip: "14:30",
+          uitslag: {
+            thuis: "-",
+            uit: "-",
+          },
+          beker: false,
+          goals: [],
+        },
       ],
     };
+  },
+  mounted() {
+    console.log("mounted!");
+    const scollTo = document.getElementById("05-02-2023");
+    const aap = "05-02-2023";
+    const underText = document.getElementById("under-text");
+    scollTo.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
+    underText.innerHTML = aap;
   },
 };
 </script>
