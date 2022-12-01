@@ -1,5 +1,9 @@
 <template>
-  <div id="under-text">HIER</div>
+  <div class="scroll-nav">
+    <img src="../assets/arrow-left.png" />
+    <div id="under-text">HIER</div>
+    <img src="../assets/arrow-right.png" />
+  </div>
   <div class="wedstrijd-wrapper">
     <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
@@ -696,5 +700,15 @@ export default {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+}
+.scroll-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+img {
+  height: 40px;
+  background: blue;
 }
 </style>
