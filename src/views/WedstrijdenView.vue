@@ -1,11 +1,11 @@
 <template>
+  <div class="wedstrijd-wrapper">
+    <WedstrijdCard :wedstrijden="wedstrijden" />
+  </div>
   <div class="scroll-nav">
     <img src="../assets/arrow-left.png" />
     <div id="under-text">HIER</div>
     <img src="../assets/arrow-right.png" />
-  </div>
-  <div class="wedstrijd-wrapper">
-    <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
 </template>
 
@@ -18,6 +18,8 @@ export default {
   },
   data() {
     return {
+      date: "",
+      dateList: [],
       wedstrijden: [
         {
           id: 1,
@@ -680,17 +682,54 @@ export default {
       ],
     };
   },
+  methods: {
+    getDate: function () {
+      const date = new Date();
+      let day = date.getDate();
+      let month = date.getMonth() + 1;
+      let year = date.getFullYear();
+      let currentDate = `${day}-${month}-${year}`;
+      this.date = currentDate;
+    },
+    getDateList: function () {
+      this.wedstrijden.map((x) => {
+        this.dateList.push(x.datum);
+      });
+    },
+    calculateDateInView: function () {
+      let numbers = [];
+      const currentDate = new Date();
+      this.dateList.map((x) => {
+        let splitDate = x.split("-", 3);
+        let day = splitDate[0];
+        let month = splitDate[1];
+        let year = splitDate[2];
+        let calcDate = new Date(year, month - 1, day);
+        let Difference_In_Time = calcDate.getTime() - currentDate.getTime();
+        if (Difference_In_Time > 0) {
+          numbers.push(Difference_In_Time + "/" + x);
+        }
+      });
+      const takeFirst = numbers[0].split("/", 2);
+      const dateInView = takeFirst[1];
+      return dateInView;
+    },
+    autoScroll: function () {
+      console.log();
+    },
+  },
   mounted() {
-    console.log("mounted!");
-    const scollTo = document.getElementById("05-02-2023");
-    const aap = "05-02-2023";
+    this.getDate();
+    this.getDateList();
+    const scollTo = document.getElementById(this.calculateDateInView());
     const underText = document.getElementById("under-text");
     scollTo.scrollIntoView({
       behavior: "smooth",
       block: "center",
       inline: "center",
     });
-    underText.innerHTML = aap;
+    underText.innerHTML = this.calculateDateInView();
+    this.autoScroll(this.date);
   },
 };
 </script>
