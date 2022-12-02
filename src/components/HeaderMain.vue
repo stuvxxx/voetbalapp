@@ -19,7 +19,6 @@ export default {
   font-size: 4em;
   line-height: 93%;
   color: rgb(255, 255, 255);
-  border: 2px solid rgba(255, 255, 255, 0.769);
 }
 .zeven {
   font-size: 2em;

@@ -818,7 +818,6 @@ export default {
   align-items: center;
 }
 img {
-  border: 2px solid white;
   height: 40px;
   cursor: pointer;
 }
