@@ -3,9 +3,9 @@
     <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
   <div class="scroll-nav">
-    <img @click="back" src="../assets/arrow-left.png" />
-    <div id="under-text">HIER</div>
-    <img @click="forward" src="../assets/arrow-right.png" />
+    <img @click="back" id="arrow-back" src="../assets/arrow-left.png" />
+    <div id="under-text">{{ dateInView }}</div>
+    <img @click="forward" id="arrow-forward" src="../assets/arrow-right.png" />
   </div>
 </template>
 
@@ -738,11 +738,28 @@ export default {
       return this.dateList.indexOf(this.dateInView);
     },
     back() {
+      const arrowBack = document.getElementById("arrow-back");
+      const arrowForward = document.getElementById("arrow-forward");
+      if (arrowForward.style.visibility == "hidden") {
+        arrowForward.style.visibility = "visible";
+      }
+      if (this.findDatePos() - 1 == 0) {
+        arrowBack.style.visibility = "hidden";
+      }
       const newPos = this.findDatePos() - 1;
       this.autoScroll(this.dateList[newPos]);
       this.dateInView = this.dateList[newPos];
     },
     forward() {
+      const arrowBack = document.getElementById("arrow-back");
+      const arrowForward = document.getElementById("arrow-forward");
+      if (arrowBack.style.visibility == "hidden") {
+        arrowBack.style.visibility = "visible";
+      }
+      console.log(this.findDatePos() + 1);
+      if (this.findDatePos() + 1 == 22) {
+        arrowForward.style.visibility = "hidden";
+      }
       const newPos = this.findDatePos() + 1;
       this.autoScroll(this.dateList[newPos]);
       this.dateInView = this.dateList[newPos];
@@ -774,8 +791,6 @@ export default {
 }
 img {
   height: 40px;
-}
-button {
-  color: white;
+  cursor: pointer;
 }
 </style>
