@@ -16,12 +16,12 @@ export default {
 }
 .header h1 {
   margin: 10px 5px 0px 5px;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 93%;
   color: rgb(255, 255, 255);
 }
 .zeven {
-  font-size: 2em;
+  font-size: 1.5em;
   color: rgba(255, 116, 47, 0.769);
 }
 </style>
