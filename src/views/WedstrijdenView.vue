@@ -767,7 +767,7 @@ export default {
   overflow: hidden;
 }
 .scroll-nav {
-  margin-top: 10px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
