@@ -5,12 +5,19 @@
   <div class="scroll-nav">
     <img
       @click="back"
-      @touchstart="touch()"
+      @touchstart="touch('back')"
+      @touchend="touch('backEnd')"
       id="arrow-back"
       src="../assets/arrow-left.png"
     />
     <div id="under-text">{{ dateInView }}</div>
-    <img @click="forward" id="arrow-forward" src="../assets/arrow-right.png" />
+    <img
+      @touchstart="touch('forward')"
+      @touchend="touch('forwardEnd')"
+      @click="forward"
+      id="arrow-forward"
+      src="../assets/arrow-right.png"
+    />
   </div>
 </template>
 
@@ -771,9 +778,18 @@ export default {
     },
     touch(command) {
       const arrowBack = document.getElementById("arrow-back");
-      //const arrowForward = document.getElementById("arrow-forward");
+      const arrowForward = document.getElementById("arrow-forward");
       if (command == "back") {
-        arrowBack.style.background = "orange";
+        arrowBack.style.background = "rgb(255, 117, 47)";
+      }
+      if (command == "backEnd") {
+        arrowBack.style.background = "black";
+      }
+      if (command == "forward") {
+        arrowForward.style.background = "rgb(255, 117, 47)";
+      }
+      if (command == "forwardEnd") {
+        arrowForward.style.background = "black";
       }
     },
   },
