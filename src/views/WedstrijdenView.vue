@@ -764,6 +764,7 @@ export default {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow: hidden;
 }
 .scroll-nav {
   margin-top: 10px;
