@@ -3,7 +3,12 @@
     <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
   <div class="scroll-nav">
-    <img @click="back" id="arrow-back" src="../assets/arrow-left.png" />
+    <img
+      @click="back"
+      @touchstart="touch()"
+      id="arrow-back"
+      src="../assets/arrow-left.png"
+    />
     <div id="under-text">{{ dateInView }}</div>
     <img @click="forward" id="arrow-forward" src="../assets/arrow-right.png" />
   </div>
@@ -764,6 +769,13 @@ export default {
       this.autoScroll(this.dateList[newPos]);
       this.dateInView = this.dateList[newPos];
     },
+    touch(command) {
+      const arrowBack = document.getElementById("arrow-back");
+      //const arrowForward = document.getElementById("arrow-forward");
+      if (command == "back") {
+        arrowBack.style.background = "orange";
+      }
+    },
   },
   mounted() {
     console.log("RUNNING: mounted");
@@ -790,6 +802,7 @@ export default {
   align-items: center;
 }
 img {
+  border: 2px solid white;
   height: 40px;
   cursor: pointer;
 }
