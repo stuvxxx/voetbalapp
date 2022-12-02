@@ -3,9 +3,9 @@
     <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
   <div class="scroll-nav">
-    <img src="../assets/arrow-left.png" />
+    <img @click="back" src="../assets/arrow-left.png" />
     <div id="under-text">HIER</div>
-    <img src="../assets/arrow-right.png" />
+    <img @click="forward" src="../assets/arrow-right.png" />
   </div>
 </template>
 
@@ -19,6 +19,7 @@ export default {
   data() {
     return {
       date: "",
+      dateInView: null,
       dateList: [],
       wedstrijden: [
         {
@@ -684,19 +685,24 @@ export default {
   },
   methods: {
     getDate: function () {
+      console.log("RUNNING: getDate");
       const date = new Date();
       let day = date.getDate();
       let month = date.getMonth() + 1;
       let year = date.getFullYear();
       let currentDate = `${day}-${month}-${year}`;
       this.date = currentDate;
+      console.log("FINISHED: getDate");
     },
     getDateList: function () {
+      console.log("RUNNING: getDateList");
       this.wedstrijden.map((x) => {
         this.dateList.push(x.datum);
       });
+      console.log("FINISHED: getDateList");
     },
     calculateDateInView: function () {
+      console.log("RUNNING: calculateDateInView");
       let numbers = [];
       const currentDate = new Date();
       this.dateList.map((x) => {
@@ -712,24 +718,43 @@ export default {
       });
       const takeFirst = numbers[0].split("/", 2);
       const dateInView = takeFirst[1];
+      this.dateInView = dateInView;
+      console.log("RUNNING: calculateDateInView" + " RETURN: " + dateInView);
       return dateInView;
     },
-    autoScroll: function () {
-      console.log();
+    autoScroll: function (date) {
+      console.log("RUNNING: autoscroll");
+      const scollTo = document.getElementById(date);
+      const underText = document.getElementById("under-text");
+      scollTo.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+      underText.innerHTML = this.dateInView;
+      console.log("FINISHED: autoscroll");
+    },
+    findDatePos: function () {
+      return this.dateList.indexOf(this.dateInView);
+    },
+    back() {
+      const newPos = this.findDatePos() - 1;
+      this.autoScroll(this.dateList[newPos]);
+      this.dateInView = this.dateList[newPos];
+    },
+    forward() {
+      const newPos = this.findDatePos() + 1;
+      this.autoScroll(this.dateList[newPos]);
+      this.dateInView = this.dateList[newPos];
     },
   },
   mounted() {
+    console.log("RUNNING: mounted");
     this.getDate();
     this.getDateList();
-    const scollTo = document.getElementById(this.calculateDateInView());
-    const underText = document.getElementById("under-text");
-    scollTo.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-      inline: "center",
-    });
-    underText.innerHTML = this.calculateDateInView();
-    this.autoScroll(this.date);
+    const upComing = this.calculateDateInView();
+    this.autoScroll(upComing);
+    console.log("FINISHED: mounted");
   },
 };
 </script>
@@ -748,5 +773,8 @@ export default {
 }
 img {
   height: 40px;
+}
+button {
+  color: white;
 }
 </style>
