@@ -289,7 +289,7 @@ export default createStore({
   },
   mutations: {
     changeActiveWedstrijden(state) {
-      state.active = state;
+      state.active = "Wedstrijded";
     },
   },
   actions: {},

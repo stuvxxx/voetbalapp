@@ -800,6 +800,7 @@ export default {
     const upComing = this.calculateDateInView();
     this.autoScroll(upComing);
     console.log("FINISHED: mounted");
+    document.getElementById("under-title").innerHTML = "Wedstrijden";
   },
 };
 </script>
