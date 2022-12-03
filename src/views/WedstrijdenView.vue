@@ -3,21 +3,9 @@
     <WedstrijdCard :wedstrijden="wedstrijden" />
   </div>
   <div class="scroll-nav">
-    <img
-      @click="back"
-      @touchstart="touch('back')"
-      @touchend="touch('backEnd')"
-      id="arrow-back"
-      src="../assets/arrow-left.png"
-    />
+    <img @click="back" id="arrow-back" src="../assets/arrow-left.png" />
     <div id="under-text">{{ dateInView }}</div>
-    <img
-      @touchstart="touch('forward')"
-      @touchend="touch('forwardEnd')"
-      @click="forward"
-      id="arrow-forward"
-      src="../assets/arrow-right.png"
-    />
+    <img @click="forward" id="arrow-forward" src="../assets/arrow-right.png" />
   </div>
 </template>
 
