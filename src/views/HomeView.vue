@@ -5,8 +5,8 @@
 <script>
 export default {
   name: "HomeView",
-  mounted() {
-    document.getElementById("under-title").innerHTML = "Roadmap website";
+  beforeMount() {
+    document.getElementById("aap").innerHTML = "roadmap site";
   },
 };
 </script>

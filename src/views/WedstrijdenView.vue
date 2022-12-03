@@ -684,6 +684,10 @@ export default {
     };
   },
   methods: {
+    setPage() {
+      this.$store.commit("changeActiveWedstrijden", "Wedstrijden");
+      console.log(this.$store.state.count);
+    },
     getDate: function () {
       console.log("RUNNING: getDate");
       const date = new Date();
@@ -770,7 +774,11 @@ export default {
       console.log("FINISHED: forward");
     },
   },
+  beforeMount() {
+    document.getElementById("aap").innerHTML = "wedstrijden";
+  },
   mounted() {
+    this.setPage();
     console.log("RUNNING: mounted");
     this.getDate();
     this.getDateList();

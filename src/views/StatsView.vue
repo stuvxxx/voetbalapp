@@ -5,8 +5,8 @@
 <script>
 export default {
   name: "StatsView",
-  mounted() {
-    document.getElementById("under-title").innerHTML = "Stakketieten";
+  beforeMount() {
+    document.getElementById("aap").innerHTML = "stakketieten";
   },
 };
 </script>

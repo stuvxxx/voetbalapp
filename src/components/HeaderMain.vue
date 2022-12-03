@@ -2,7 +2,7 @@
   <div class="header">
     <h1>FIT<br /><span class="zeven">7</span></h1>
   </div>
-  <h2 class="header-title" id="aap"></h2>
+  <div class="header-title" id="aap"></div>
 </template>
 
 <script>
@@ -27,8 +27,10 @@ export default {
   color: rgba(255, 116, 47, 0.769);
 }
 .header-title {
+  margin-top: 20px;
   text-transform: uppercase;
   font-family: "Orbitron", sans-serif;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
+  font-size: 20px;
 }
 </style>

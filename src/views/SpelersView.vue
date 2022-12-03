@@ -5,8 +5,8 @@
 <script>
 export default {
   name: "SpelersView",
-  mounted() {
-    document.getElementById("under-title").innerHTML = "De parels!";
+  beforeMount() {
+    document.getElementById("aap").innerHTML = "spelers";
   },
 };
 </script>

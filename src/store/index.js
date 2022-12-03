@@ -2,7 +2,7 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    active: "",
+    activePage: "",
     teams: {
       Zeeburgia: {
         logo: "./assets/zeeburgia-logo.png",
@@ -288,8 +288,8 @@ export default createStore({
     },
   },
   mutations: {
-    changeActiveWedstrijden(state) {
-      state.active = "Wedstrijded";
+    changeActiveWedstrijden(state, page) {
+      state.activePage = page;
     },
   },
   actions: {},
