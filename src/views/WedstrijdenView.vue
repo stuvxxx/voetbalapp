@@ -4,7 +4,7 @@
   </div>
   <div class="scroll-nav">
     <img @click="back" id="arrow-back" src="../assets/arrow-left.png" />
-    <div id="under-text">{{ dateInView }}</div>
+    <div id="scroll-nav-title">{{ dateInView }}</div>
     <img @click="forward" id="arrow-forward" src="../assets/arrow-right.png" />
   </div>
 </template>
@@ -726,19 +726,20 @@ export default {
       console.log("RUNNING: autoscroll");
       const scollTo = document.getElementById(date);
       console.log(scollTo);
-      const underText = document.getElementById("under-text");
+      const scrollNavTitle = document.getElementById("scroll-nav-title");
       scollTo.scrollIntoView({
         behavior: "smooth",
         block: "center",
         inline: "center",
       });
-      underText.innerHTML = this.dateInView;
+      scrollNavTitle.innerHTML = this.dateInView;
       console.log("FINISHED: autoscroll");
     },
     findDatePos: function () {
       return this.dateList.indexOf(this.dateInView);
     },
     back() {
+      console.log("RUNNING: back");
       const arrowBack = document.getElementById("arrow-back");
       const arrowForward = document.getElementById("arrow-forward");
       if (arrowForward.style.visibility == "hidden") {
@@ -750,8 +751,10 @@ export default {
       const newPos = this.findDatePos() - 1;
       this.autoScroll(this.dateList[newPos]);
       this.dateInView = this.dateList[newPos];
+      console.log("FINISHED: back");
     },
     forward() {
+      console.log("RUNNING: forward");
       const arrowBack = document.getElementById("arrow-back");
       const arrowForward = document.getElementById("arrow-forward");
       if (arrowBack.style.visibility == "hidden") {
@@ -764,6 +767,7 @@ export default {
       const newPos = this.findDatePos() + 1;
       this.autoScroll(this.dateList[newPos]);
       this.dateInView = this.dateList[newPos];
+      console.log("FINISHED: forward");
     },
     //touch(command) {
     //  const arrowBack = document.getElementById("arrow-back");
@@ -789,7 +793,6 @@ export default {
     const upComing = this.calculateDateInView();
     this.autoScroll(upComing);
     console.log("FINISHED: mounted");
-    document.getElementById("under-title").innerHTML = "Wedstrijden";
   },
 };
 </script>
