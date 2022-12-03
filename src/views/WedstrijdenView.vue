@@ -769,22 +769,6 @@ export default {
       this.dateInView = this.dateList[newPos];
       console.log("FINISHED: forward");
     },
-    //touch(command) {
-    //  const arrowBack = document.getElementById("arrow-back");
-    //  const arrowForward = document.getElementById("arrow-forward");
-    //  if (command == "back") {
-    //    arrowBack.style.background = "rgb(255, 117, 47)";
-    //  }
-    //  if (command == "backEnd") {
-    //    arrowBack.style.background = "black";
-    //  }
-    //  if (command == "forward") {
-    //    arrowForward.style.background = "rgb(255, 117, 47)";
-    //  }
-    //  if (command == "forwardEnd") {
-    //    arrowForward.style.background = "black";
-    //  }
-    //},
   },
   mounted() {
     console.log("RUNNING: mounted");
