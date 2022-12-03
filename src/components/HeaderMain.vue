@@ -2,7 +2,7 @@
   <div class="header">
     <h1>FIT<br /><span class="zeven">7</span></h1>
   </div>
-  <h2 id="under-title"></h2>
+  <h2 class="header-title" id="under-title"></h2>
 </template>
 
 <script>
@@ -12,6 +12,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Orbitron:wght@400;799&display=swap");
 .header {
   height: max-content;
 }
@@ -24,5 +25,10 @@ export default {
 .zeven {
   font-size: 1.5em;
   color: rgba(255, 116, 47, 0.769);
+}
+.header-title {
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 8px;
 }
 </style>
