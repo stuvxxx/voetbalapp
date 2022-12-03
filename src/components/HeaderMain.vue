@@ -2,7 +2,7 @@
   <div class="header">
     <h1>FIT<br /><span class="zeven">7</span></h1>
   </div>
-  <h2 id="under-title">aap</h2>
+  <h2 id="under-title"></h2>
 </template>
 
 <script>
