@@ -725,6 +725,7 @@ export default {
     autoScroll: function (date) {
       console.log("RUNNING: autoscroll");
       const scollTo = document.getElementById(date);
+      console.log(scollTo);
       const underText = document.getElementById("under-text");
       scollTo.scrollIntoView({
         behavior: "smooth",
