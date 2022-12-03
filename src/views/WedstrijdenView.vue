@@ -33,6 +33,7 @@ export default {
             uit: 1,
           },
           beker: true,
+          res: "draw",
           goals: [
             {
               minuut: 44,
@@ -58,6 +59,7 @@ export default {
             uit: 2,
           },
           beker: true,
+          res: "win",
           goals: [
             {
               minuut: 25,
@@ -106,6 +108,7 @@ export default {
             uit: 5,
           },
           beker: false,
+          res: "loss",
           goals: [
             {
               minuut: 22,
@@ -149,6 +152,7 @@ export default {
             thuis: 2,
             uit: 2,
           },
+          res: "draw",
           beker: false,
           goals: [
             {
@@ -183,6 +187,7 @@ export default {
             thuis: 5,
             uit: 2,
           },
+          res: "win",
           beker: true,
           goals: [
             {
@@ -236,6 +241,7 @@ export default {
             thuis: 2,
             uit: 6,
           },
+          res: "loss",
           beker: false,
           goals: [
             {
@@ -291,6 +297,7 @@ export default {
             thuis: 8,
             uit: 3,
           },
+          res: "loss",
           beker: false,
           goals: [
             {
@@ -362,6 +369,7 @@ export default {
             thuis: 2,
             uit: 2,
           },
+          res: "draw",
           beker: false,
           goals: [
             {
@@ -396,6 +404,7 @@ export default {
             thuis: 6,
             uit: 0,
           },
+          res: "loss",
           beker: false,
           goals: [
             {
@@ -440,6 +449,7 @@ export default {
             thuis: 2,
             uit: 2,
           },
+          res: "draw",
           beker: false,
           goals: [
             {
@@ -474,6 +484,7 @@ export default {
             thuis: 1,
             uit: 3,
           },
+          res: "loss",
           beker: false,
           goals: [
             {
@@ -726,7 +737,27 @@ export default {
       console.log("RUNNING: calculateDateInView" + " RETURN: " + dateInView);
       return dateInView;
     },
-    autoScroll: function (date) {
+    findDatePos() {
+      return this.dateList.indexOf(this.dateInView);
+    },
+    //changeTitleColor() {
+    //  console.log("RUNNING: changeTitleColor");
+    //  const pos = this.findDatePos();
+    //  const wedstrijd = this.wedstrijden[pos - 1];
+    //  if (wedstrijd.res == "win") {
+    //    console.log("win");
+    //    document.getElementById("aap").style.textShadow =
+    //      "rgba(0, 255, 0, 0.9) 5px 5px 10px;";
+    //  }
+    //  if (wedstrijd.res == "loss") {
+    //    document.getElementById("aap").style.textShadow =
+    //      "rgba(255, 0, 0, 0.9) 5px 5px 10px";
+    //  } else {
+    //    document.getElementById("aap").style.textShadow = "none";
+    //  }
+    //  console.log("FINISHED: changeTitleColor");
+    //},
+    autoScroll(date) {
       console.log("RUNNING: autoscroll");
       const scollTo = document.getElementById(date);
       console.log(scollTo);
@@ -737,10 +768,8 @@ export default {
         inline: "center",
       });
       scrollNavTitle.innerHTML = this.dateInView;
+      //this.changeTitleColor();
       console.log("FINISHED: autoscroll");
-    },
-    findDatePos: function () {
-      return this.dateList.indexOf(this.dateInView);
     },
     back() {
       console.log("RUNNING: back");
