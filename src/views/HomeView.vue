@@ -1,5 +1,5 @@
 <template>
-  <h1></h1>
+  <p>- Dit invullen</p>
 </template>
 
 <script>
