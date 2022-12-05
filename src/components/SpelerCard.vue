@@ -1,4 +1,5 @@
 <template>
+  <div class="spelers-header"></div>
   <div
     v-for="speler in spelers"
     :key="speler.naam"
@@ -20,10 +21,14 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Orbitron:wght@400;799&display=swap");
+.spelers-header {
+  width: 100%;
+  height: 135px;
+}
 .speler-avatar-wrapper {
   border: 1px solid black;
-  height: 60px;
-  width: 45px;
+  height: 68px;
+  width: 48px;
   font-family: "Orbitron", sans-serif;
   font-size: 8px;
   margin: 5px;
@@ -34,7 +39,7 @@ export default {
 .image-wrapper {
   margin: 0 auto;
   border: 1px solid yellow;
-  height: 48px;
-  width: 30px;
+  height: 55px;
+  width: 40px;
 }
 </style>
