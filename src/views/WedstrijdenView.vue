@@ -4,7 +4,7 @@
   </div>
   <div class="scroll-nav">
     <img @click="back" id="arrow-back" src="../assets/arrow-left.png" />
-    <div id="scroll-nav-title">{{ dateInView }}</div>
+    <div class="scroll-text" id="scroll-nav-title">{{ dateInView }}</div>
     <img @click="forward" id="arrow-forward" src="../assets/arrow-right.png" />
   </div>
 </template>
@@ -516,10 +516,74 @@ export default {
           datum: "04-12-2022",
           tijdstip: "10:00",
           uitslag: {
+            thuis: "8",
+            uit: "2",
+          },
+          beker: false,
+          goals: [
+            {
+              minuut: 11,
+              score: "thuis",
+              goalwie: "Wesley Meesters",
+            },
+            {
+              minuut: 16,
+              score: "uit",
+              goalwie: "Oscar",
+            },
+            {
+              minuut: 25,
+              score: "thuis",
+              goalwie: "Rodney Faber",
+            },
+            {
+              minuut: 35,
+              score: "thuis",
+              goalwie: "Arnold Pronk",
+            },
+            {
+              minuut: 50,
+              score: "thuis",
+              goalwie: "Arnold Pronk",
+            },
+            {
+              minuut: 55,
+              score: "uit",
+              goalwie: "Fakkel",
+            },
+            {
+              minuut: 66,
+              score: "thuis",
+              goalwie: "Joost Veldman",
+            },
+            {
+              minuut: 74,
+              score: "thuis",
+              goalwie: "Tim Luiten",
+            },
+            {
+              minuut: 80,
+              score: "thuis",
+              goalwie: "Kasper Luiten",
+            },
+            {
+              minuut: 88,
+              score: "thuis",
+              goalwie: "Wouter van Rooij",
+            },
+          ],
+        },
+        {
+          id: 26,
+          thuis: { team: "FIT 7", logo: "fit-logo.png" },
+          uit: { team: "AMVJ 2", logo: "amvj-logo.png" },
+          datum: "13-12-2022",
+          tijdstip: "20:30",
+          uitslag: {
             thuis: "-",
             uit: "-",
           },
-          beker: false,
+          beker: true,
           goals: [],
         },
         {
@@ -794,7 +858,7 @@ export default {
         arrowBack.style.visibility = "visible";
       }
       console.log(this.findDatePos() + 1);
-      if (this.findDatePos() + 1 == 22) {
+      if (this.findDatePos() + 1 == 23) {
         arrowForward.style.visibility = "hidden";
       }
       const newPos = this.findDatePos() + 1;
@@ -819,6 +883,7 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Orbitron:wght@400;799&display=swap");
 .wedstrijd-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -834,5 +899,9 @@ export default {
 img {
   height: 40px;
   cursor: pointer;
+}
+.scroll-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
 }
 </style>

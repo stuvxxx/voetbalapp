@@ -29,7 +29,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 180,
           },
           daniel: {
             naam: "Daniel Aw",
@@ -40,7 +39,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 180,
           },
           alex: {
             naam: "Alexander Bulthuis",
@@ -51,7 +49,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 180,
           },
           sjoerd: {
             naam: "Sjoerd Droger",
@@ -62,7 +59,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 0,
           },
           fakkel: {
             naam: "Martijn Fakkeldij",
@@ -73,7 +69,6 @@ export default createStore({
             goals: 0,
             assists: 1,
             kaarten: 0,
-            mins: 160,
           },
           isani: {
             naam: "Isani Franzua Martinez",
@@ -84,7 +79,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 90,
           },
           pepijn: {
             naam: "Pepijn Van Hulst",
@@ -95,7 +89,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 180,
           },
           joep: {
             naam: "Joep Maenen",
@@ -106,7 +99,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 0,
           },
           oscar: {
             naam: "Oscar Verheul",
@@ -117,7 +109,6 @@ export default createStore({
             goals: 1,
             assists: 0,
             kaarten: 0,
-            mins: 180,
           },
           jip: {
             naam: "Jip Verwiel",
@@ -128,7 +119,6 @@ export default createStore({
             goals: 1,
             assists: 0,
             kaarten: 0,
-            mins: 180,
           },
           bas: {
             naam: "Bas Voorwinde",
@@ -139,7 +129,6 @@ export default createStore({
             goals: 1,
             assists: 0,
             kaarten: 0,
-            mins: 160,
           },
           tim: {
             naam: "Tim Wagemakers",
@@ -150,7 +139,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 180,
           },
           lauran: {
             naam: "Lauran Ypinga",
@@ -161,7 +149,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 90,
           },
           metin: {
             naam: "Metin van Zijl",
@@ -172,7 +159,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 0,
           },
           tomh: {
             naam: "Tom Haarts",
@@ -183,7 +169,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 0,
           },
           tomn: {
             naam: "Tom van der Velde",
@@ -194,7 +179,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 30,
           },
           pelle: {
             naam: "Pelle",
@@ -205,7 +189,6 @@ export default createStore({
             goals: 0,
             assists: 0,
             kaarten: 0,
-            mins: 0,
           },
         },
       },
