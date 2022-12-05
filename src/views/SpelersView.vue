@@ -1,15 +1,18 @@
 <template>
   <div class="spelers-wrapper">
+    <HeaderSpelers />
     <SpelerCard :spelers="spelers" />
   </div>
 </template>
 
 <script>
 import SpelerCard from "@/components/SpelerCard.vue";
+import HeaderSpelers from "@/components/HeaderSpelers.vue";
 export default {
   name: "SpelersView",
   components: {
     SpelerCard,
+    HeaderSpelers,
   },
   data() {
     return {

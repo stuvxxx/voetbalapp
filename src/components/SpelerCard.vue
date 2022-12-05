@@ -1,12 +1,11 @@
 <template>
-  <div class="spelers-header"></div>
   <div
     v-for="speler in spelers"
     :key="speler.naam"
     class="speler-cards-wrapper"
   >
-    <div class="speler-avatar-wrapper">
-      <div class="image-wrapper"></div>
+    <div class="speler-avatar-wrapper" @click="handleClick(speler.nickname)">
+      <div class="image-wrapper" :id="speler.nickname"></div>
       <p>{{ speler.nickname }}</p>
     </div>
   </div>
@@ -16,17 +15,18 @@
 export default {
   name: "SpelerCard",
   props: ["spelers"],
+  methods: {
+    handleClick(x) {
+      console.log("RUNNING: handleClick");
+      document.getElementById(x).classList.toggle("large");
+    },
+  },
 };
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Orbitron:wght@400;799&display=swap");
-.spelers-header {
-  width: 100%;
-  height: 135px;
-}
 .speler-avatar-wrapper {
-  border: 1px solid black;
   height: 68px;
   width: 48px;
   font-family: "Orbitron", sans-serif;
@@ -38,8 +38,17 @@ export default {
 }
 .image-wrapper {
   margin: 0 auto;
-  border: 1px solid yellow;
   height: 55px;
   width: 40px;
+  -webkit-box-shadow: inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 4px 4px 7px 0px #000000;
+  animation-duration: 5s;
+  transition: height 2s, width 2s;
+}
+
+.large {
+  height: 110px;
+  width: 80px;
 }
 </style>
