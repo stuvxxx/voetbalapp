@@ -12,17 +12,20 @@
     </div>
   </div>
   <div class="player-details" id="player-details">
-    <p>Volledige naam: Arie van Fokkinghel</p>
-    <p>Leeftijd: 19</p>
-    <p>Positie: LB, CV, VM</p>
-    <p>Voet: links</p>
-    <p>Goals: 8</p>
-    <p>Assists: 4</p>
+    <p>Volledige naam: <span>Arie van Fokkinghel</span></p>
+    <p>Leeftijd: <span>35</span></p>
+    <p>Positie: <span>LB</span></p>
+    <p>Voet: <span>Links</span></p>
+    <p>Goals: <span>2</span></p>
+    <p>Assists: <span>0</span></p>
     <p>
-      Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta
-      accusamus eligendi fuga sequi corporis quos ut officia repellendus totam
-      eaque nobis architecto possimus, laudantium ipsa, dolorem vero fugiat
-      reiciendis?
+      Bio:
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta
+        accusamus eligendi fuga sequi corporis quos ut officia repellendus totam
+        eaque nobis architecto possimus, laudantium ipsa, dolorem vero fugiat
+        reiciendis?</span
+      >
     </p>
   </div>
 </template>
@@ -45,9 +48,13 @@ export default {
       this.moveImg(playerId);
       this.moveName(playerId + "n");
       this.moveAvatars(playerId);
+      this.addDetails(playerId);
       this.showDetails(playerId);
       this.cheat();
       console.log("ENDING: handleClick");
+    },
+    addDetails(playerId) {
+      
     },
     showDetails(playerId) {
       console.log("RUNNING: showDetails");
@@ -119,7 +126,6 @@ export default {
   transition: font-size 1.5s, font-weight 1.5s, transform 1.5s;
 }
 .image-wrapper {
-  background: crimson;
   margin: 0 auto;
   height: 55px;
   width: 40px;
@@ -143,6 +149,7 @@ export default {
   font-weight: 800;
 }
 .player-details {
+  color: rgb(255, 117, 47);
   position: absolute;
   background-color: rgb(31, 30, 29);
   width: 250px;
@@ -155,5 +162,8 @@ export default {
   opacity: 0;
   z-index: -3;
   transition: opacity 1.5s;
+}
+span {
+  color: white;
 }
 </style>
