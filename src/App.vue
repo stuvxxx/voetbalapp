@@ -46,6 +46,7 @@ body {
 }
 
 nav {
+  position: sticky;
   display: flex;
   overflow: hidden;
   position: fixed;
