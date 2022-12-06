@@ -173,7 +173,7 @@ export default {
         },
         {
           nickname: "Pelle",
-          naam: "Pelle",
+          naam: "Pelle Bast",
           leeftijd: "?",
           foto: "",
           pos: "RB, RV, VM",
