@@ -1,17 +1,37 @@
 <template>
   <div
+    @click="forceRerender()"
+    class="cheatdiv"
+    id="cheatDiv"
+    :key="componentKey"
+  ></div>
+  <div
     v-for="speler in spelers"
     :key="speler.naam"
     class="speler-cards-wrapper"
+    :id="componentKey"
   >
-    <div class="speler-avatar-wrapper" @click="handleClick(speler.nickname)">
-      <div class="image-wrapper" :id="speler.nickname"></div>
-      <p class="player-name" :id="speler.nickname + 'n'">
+    <div
+      :key="componentKey"
+      class="speler-avatar-wrapper"
+      @click="handleClick(speler.nickname)"
+    >
+      <div
+        :key="componentKey"
+        class="image-wrapper"
+        :id="speler.nickname"
+      ></div>
+      <p :key="componentKey" class="player-name" :id="speler.nickname + 'n'">
         {{ speler.nickname }}
       </p>
     </div>
   </div>
-  <div class="player-details" id="player-details">
+  <div
+    @click="forceRerender()"
+    :key="componentKey"
+    class="player-details"
+    id="player-details"
+  >
     <p>Volledige naam: <span id="playerName"></span></p>
     <p>Leeftijd: <span id="playerAge"></span></p>
     <p>Positie: <span id="playerPos"></span></p>
@@ -26,16 +46,26 @@
 </template>
 
 <script>
+//import { getCurrentInstance } from "vue";
 export default {
   name: "SpelerCard",
+  data() {
+    return {
+      componentKey: 0,
+    };
+  },
   props: ["spelers"],
   methods: {
+    forceRerender() {
+      console.log("CLICKED");
+      this.componentKey += 1;
+      console.log(this.componentKey);
+    },
     async cheat() {
       console.log("RUNNING: cheat");
       const cheatDiv = document.getElementById("cheatDiv");
       cheatDiv.style.zIndex = "2";
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      cheatDiv.style.zIndex = "-2";
       console.log("ENDING: cheat");
     },
     handleClick(playerId) {
@@ -167,5 +197,13 @@ export default {
 }
 span {
   color: white;
+}
+.cheatdiv {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0;
+  z-index: -2;
 }
 </style>

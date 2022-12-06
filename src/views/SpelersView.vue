@@ -1,5 +1,4 @@
 <template>
-  <div class="cheatdiv" id="cheatDiv"></div>
   <div class="spelers-wrapper">
     <HeaderSpelers />
     <SpelerCard :spelers="spelers" />
@@ -228,13 +227,5 @@ export default {
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: flex-start;
-}
-.cheatdiv {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: black;
-  opacity: 0;
-  z-index: -2;
 }
 </style>
