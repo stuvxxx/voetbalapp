@@ -18,18 +18,6 @@ export default {
     return {
       spelers: [
         {
-          nickname: "Marc",
-          naam: "Marc Zwiers",
-          leeftijd: 37,
-          foto: "",
-          pos: "CV",
-          voet: "Rechts",
-          goals: 0,
-          assists: 0,
-          kaarten: 0,
-          bio: "blablablablabla",
-        },
-        {
           nickname: "Daniel",
           naam: "Daniel Aw",
           leeftijd: "?",
