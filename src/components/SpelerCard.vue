@@ -11,6 +11,20 @@
       </p>
     </div>
   </div>
+  <div class="player-details" id="player-details">
+    <p>Volledige naam: Arie van Fokkinghel</p>
+    <p>Leeftijd: 19</p>
+    <p>Positie: LB, CV, VM</p>
+    <p>Voet: links</p>
+    <p>Goals: 8</p>
+    <p>Assists: 4</p>
+    <p>
+      Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta
+      accusamus eligendi fuga sequi corporis quos ut officia repellendus totam
+      eaque nobis architecto possimus, laudantium ipsa, dolorem vero fugiat
+      reiciendis?
+    </p>
+  </div>
 </template>
 
 <script>
@@ -31,8 +45,17 @@ export default {
       this.moveImg(playerId);
       this.moveName(playerId + "n");
       this.moveAvatars(playerId);
+      this.showDetails(playerId);
       this.cheat();
       console.log("ENDING: handleClick");
+    },
+    showDetails(playerId) {
+      console.log("RUNNING: showDetails");
+      console.log(playerId);
+      let detailPage = document.getElementById("player-details");
+      detailPage.style.zIndex = "+3";
+      detailPage.style.opacity = "1";
+      console.log("ENDING: showDetails");
     },
     moveAvatars(playerId) {
       let avatars = document.getElementsByClassName("speler-avatar-wrapper");
@@ -89,7 +112,7 @@ export default {
   font-size: 8px;
   margin: 5px;
   cursor: pointer;
-  transition: transform 1.5s;
+  transition: transform 3s;
 }
 .speler-avatar-wrapper p {
   margin: 1px 0 auto;
@@ -118,5 +141,19 @@ export default {
 .font-large {
   font-size: 40px;
   font-weight: 800;
+}
+.player-details {
+  position: absolute;
+  background-color: rgb(31, 30, 29);
+  width: 250px;
+  height: 300px;
+  margin-top: 135px;
+  margin-left: 10px;
+  text-align: left;
+  font-family: "Orbitron", sans-serif;
+  font-size: 12px;
+  opacity: 0;
+  z-index: -3;
+  transition: opacity 1.5s;
 }
 </style>
