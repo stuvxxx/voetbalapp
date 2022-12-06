@@ -18,6 +18,18 @@ export default {
     return {
       spelers: [
         {
+          nickname: "Marc",
+          naam: "Marc Zwiers",
+          leeftijd: 37,
+          foto: "",
+          pos: "CV",
+          voet: "Rechts",
+          goals: 0,
+          assists: 0,
+          kaarten: 0,
+          bio: "blablablablabla",
+        },
+        {
           nickname: "Daniel",
           naam: "Daniel Aw",
           leeftijd: "?",
@@ -208,7 +220,6 @@ export default {
 .spelers-wrapper {
   background-color: rgb(31, 30, 29);
   margin: 0 auto;
-  margin-top: 30px;
   width: 300px;
   height: 475px;
   display: flex;
