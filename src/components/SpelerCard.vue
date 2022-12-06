@@ -12,20 +12,15 @@
     </div>
   </div>
   <div class="player-details" id="player-details">
-    <p>Volledige naam: <span>Arie van Fokkinghel</span></p>
-    <p>Leeftijd: <span>35</span></p>
-    <p>Positie: <span>LB</span></p>
-    <p>Voet: <span>Links</span></p>
-    <p>Goals: <span>2</span></p>
-    <p>Assists: <span>0</span></p>
+    <p>Volledige naam: <span id="playerName"></span></p>
+    <p>Leeftijd: <span id="playerAge"></span></p>
+    <p>Positie: <span id="playerPos"></span></p>
+    <p>Voet: <span id="playerVoet"></span></p>
+    <p>Goals: <span id="playerGoals"></span></p>
+    <p>Assists: <span id="playerAss"></span></p>
     <p>
       Bio:
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta
-        accusamus eligendi fuga sequi corporis quos ut officia repellendus totam
-        eaque nobis architecto possimus, laudantium ipsa, dolorem vero fugiat
-        reiciendis?</span
-      >
+      <span id="playerBio"></span>
     </p>
   </div>
 </template>
@@ -54,7 +49,14 @@ export default {
       console.log("ENDING: handleClick");
     },
     addDetails(playerId) {
-      
+      let player = this.spelers.find((x) => x.nickname == playerId);
+      document.getElementById("playerName").innerHTML = player.naam;
+      document.getElementById("playerAge").innerHTML = player.leeftijd;
+      document.getElementById("playerPos").innerHTML = player.pos;
+      document.getElementById("playerVoet").innerHTML = player.voet;
+      document.getElementById("playerGoals").innerHTML = player.goals;
+      document.getElementById("playerAss").innerHTML = player.assists;
+      document.getElementById("playerBio").innerHTML = player.bio;
     },
     showDetails(playerId) {
       console.log("RUNNING: showDetails");

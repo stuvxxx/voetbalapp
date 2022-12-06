@@ -28,6 +28,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Daniel",
@@ -38,6 +39,7 @@ export default {
           voet: "Rechts",
           goals: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Alex",
@@ -49,6 +51,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Sjoerc",
@@ -60,6 +63,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Isani",
@@ -71,6 +75,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Peppie",
@@ -82,6 +87,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Joep",
@@ -93,6 +99,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Oscar",
@@ -104,6 +111,7 @@ export default {
           goals: 1,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Jip",
@@ -115,6 +123,7 @@ export default {
           goals: 1,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Bas",
@@ -126,6 +135,7 @@ export default {
           goals: 1,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Tim",
@@ -137,6 +147,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Lauran",
@@ -148,6 +159,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Metin",
@@ -159,6 +171,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Tom",
@@ -170,6 +183,7 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
         },
         {
           nickname: "Pelle",
@@ -181,6 +195,19 @@ export default {
           goals: 0,
           assists: 0,
           kaarten: 0,
+          bio: "blablablablabla",
+        },
+        {
+          nickname: "Yossi",
+          naam: "Yossi Bierman",
+          leeftijd: 4,
+          foto: "",
+          pos: "AM",
+          voet: "Links",
+          goals: 0,
+          assists: 0,
+          kaarten: 0,
+          bio: "blablablablabla",
         },
       ],
     };
