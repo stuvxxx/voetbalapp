@@ -59,7 +59,7 @@ export default {
 
 <style scoped>
 .roadmap-wrapper {
-  height: 300px;
+  height: 500px;
   margin: 0 auto;
   width: 300px;
   text-align: left;
