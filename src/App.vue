@@ -32,7 +32,6 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(12, 11, 11);
-  overflow: hidden;
   max-height: 100vh;
 }
 
