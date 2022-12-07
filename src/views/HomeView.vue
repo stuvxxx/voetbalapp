@@ -10,6 +10,7 @@
         Alle stats verzamelen voor de schillende pagina's dus: goals, assists,
         leeftijden etc.
       </li>
+      <li>Ook voor pc mooi maken</li>
     </ul>
     <h3>Home (deze pagina)</h3>
     <ul>
