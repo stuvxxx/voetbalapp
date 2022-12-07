@@ -6,7 +6,7 @@
 export default {
   name: "StatsView",
   beforeMount() {
-    document.getElementById("aap").innerHTML = "stakketieten";
+    document.getElementById("aap").innerHTML = "Stats";
   },
 };
 </script>
