@@ -5,7 +5,11 @@
       <li>Eerste (visuele) bugs fixen</li>
       <li>Alles goed leesbaar krijgen op verschillende devices</li>
       <li>Goed logo fixen</li>
-      <li>Header herbouwen, neemt nu te veel ruimte in.</li>
+      <li>Header herbouwen, neemt nu te veel ruimte in</li>
+      <li>
+        Alle stats verzamelen voor de schillende pagina's dus: goals, assists,
+        leeftijden etc.
+      </li>
     </ul>
     <h3>Home (deze pagina)</h3>
     <ul>
@@ -24,19 +28,22 @@
     </ul>
     <h3>Stats</h3>
     <ul>
-      <li>Betere fotos</li>
-      <li>Alles is net ff te klein of onleesbaar, dat fixen dus.</li>
-      <li>Header pas laten verschijnen als een spelers is aangeklikt</li>
-      <li>Fotos eventueel laten draaien als ze naar positie schuiven</li>
-      <li>Soepelere overgang om terug naar spelerovergang te gaan</li>
+      <li>Stats verzamelen</li>
+      <li>Alex' stats verwerken</li>
+      <li>Uitschuifmenus voor elke stats</li>
+      <li>
+        Menus: stand competitie, goals, assists, minutengespeeld dat soort shit
+      </li>
     </ul>
-    <h3>Spelers</h3>
+    <h3>Wedtrijden</h3>
     <ul>
-      <li>Betere fotos</li>
-      <li>Alles is net ff te klein of onleesbaar, dat fixen dus.</li>
-      <li>Header pas laten verschijnen als een spelers is aangeklikt</li>
-      <li>Fotos eventueel laten draaien als ze naar positie schuiven</li>
-      <li>Soepelere overgang om terug naar spelerovergang te gaan</li>
+      <li>Minder rommelig laten ogen</li>
+      <li>Zoek functie</li>
+      <li>Andere pijltjes</li>
+      <li>
+        Zorgen dat je ook kan scrollen ipv alleen de pijltjes te gebruiken
+      </li>
+      <li>icoontje bij bekerwedstrijden</li>
     </ul>
   </div>
 </template>
