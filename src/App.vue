@@ -47,7 +47,6 @@ nav {
   position: sticky;
   display: flex;
   overflow: hidden;
-  position: fixed;
   bottom: 10px;
   width: 100%;
   justify-content: space-evenly;
