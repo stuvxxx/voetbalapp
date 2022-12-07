@@ -59,6 +59,7 @@ import Tim from "../assets/fotos/tim.jpg";
 import Lauran from "../assets/fotos/lauran.jpg";
 import Pelle from "../assets/fotos/pelle.jpg";
 import Yossi from "../assets/fotos/yossi.jpg";
+import Isani from "../assets/fotos/isani.jpg";
 //import { getCurrentInstance } from "vue";
 export default {
   name: "SpelerCard",
@@ -110,6 +111,9 @@ export default {
       }
       if (speler == "Yossi") {
         return Yossi;
+      }
+      if (speler == "Isani") {
+        return Isani;
       }
     },
     async cheat() {
