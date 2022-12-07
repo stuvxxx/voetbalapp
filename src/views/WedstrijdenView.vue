@@ -577,14 +577,25 @@ export default {
           id: 26,
           thuis: { team: "FIT 7", logo: "fit-logo.png" },
           uit: { team: "AMVJ 2", logo: "amvj-logo.png" },
-          datum: "13-12-2022",
+          datum: "06-12-2022",
           tijdstip: "20:30",
           uitslag: {
-            thuis: "-",
-            uit: "-",
+            thuis: "0",
+            uit: "2",
           },
           beker: true,
-          goals: [],
+          goals: [
+            {
+              minuut: 60,
+              score: "uit",
+              goalwie: "Binkie de Vries",
+            },
+            {
+              minuut: 78,
+              score: "thuis",
+              goalwie: "Bonkie Drie",
+            },
+          ],
         },
         {
           id: 13,

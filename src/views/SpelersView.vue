@@ -28,6 +28,7 @@ export default {
           assists: 0,
           kaarten: 0,
           bio: "blablablablabla",
+          img: "../assets/marc2.jpg",
         },
         {
           nickname: "Daniel",
@@ -53,7 +54,7 @@ export default {
           bio: "blablablablabla",
         },
         {
-          nickname: "Sjoerc",
+          nickname: "Sjoerd",
           naam: "Sjoerd Droger",
           leeftijd: "?",
           foto: "",
@@ -220,6 +221,7 @@ export default {
 .spelers-wrapper {
   background-color: rgb(31, 30, 29);
   margin: 0 auto;
+  margin-top: 20px;
   width: 300px;
   height: 475px;
   display: flex;

@@ -20,6 +20,7 @@
         :key="componentKey"
         class="image-wrapper"
         :id="speler.nickname"
+        :style="{ backgroundImage: `url(${getImage(speler.nickname)})` }"
       ></div>
       <p :key="componentKey" class="player-name" :id="speler.nickname + 'n'">
         {{ speler.nickname }}
@@ -46,6 +47,18 @@
 </template>
 
 <script>
+import Marc from "../assets/fotos/marc2.jpg";
+import Bas from "../assets/fotos/bas.jpg";
+import Daniel from "../assets/fotos/daniel.jpg";
+import Sjoerd from "../assets/fotos/sjoerd.jpg";
+import Peppie from "../assets/fotos/pepijn.jpg";
+import Joep from "../assets/fotos/joep.jpg";
+import Oscar from "../assets/fotos/oscar.jpg";
+import Jip from "../assets/fotos/jip.jpg";
+import Tim from "../assets/fotos/tim.jpg";
+import Lauran from "../assets/fotos/lauran.jpg";
+import Pelle from "../assets/fotos/pelle.jpg";
+import Yossi from "../assets/fotos/yossi.jpg";
 //import { getCurrentInstance } from "vue";
 export default {
   name: "SpelerCard",
@@ -60,6 +73,44 @@ export default {
       console.log("CLICKED");
       this.componentKey += 1;
       console.log(this.componentKey);
+    },
+    getImage(speler) {
+      if (speler == "Marc") {
+        return Marc;
+      }
+      if (speler == "Bas") {
+        return Bas;
+      }
+      if (speler == "Sjoerd") {
+        return Sjoerd;
+      }
+      if (speler == "Daniel") {
+        return Daniel;
+      }
+      if (speler == "Peppie") {
+        return Peppie;
+      }
+      if (speler == "Joep") {
+        return Joep;
+      }
+      if (speler == "Oscar") {
+        return Oscar;
+      }
+      if (speler == "Jip") {
+        return Jip;
+      }
+      if (speler == "Tim") {
+        return Tim;
+      }
+      if (speler == "Lauran") {
+        return Lauran;
+      }
+      if (speler == "Pelle") {
+        return Pelle;
+      }
+      if (speler == "Yossi") {
+        return Yossi;
+      }
     },
     async cheat() {
       console.log("RUNNING: cheat");
@@ -158,6 +209,7 @@ export default {
   transition: font-size 1.5s, font-weight 1.5s, transform 1.5s;
 }
 .image-wrapper {
+  background-size: 110px;
   margin: 0 auto;
   height: 55px;
   width: 40px;
