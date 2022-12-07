@@ -33,6 +33,7 @@ body {
   padding: 0;
   background: rgb(12, 11, 11);
   max-height: 100vh;
+  overflow: hidden;
 }
 
 #app {
