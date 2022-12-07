@@ -200,9 +200,9 @@ span {
 }
 .cheatdiv {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: black;
+  width: inherit;
+  height: inherit;
+  background: rgb(221, 27, 27);
   opacity: 0;
   z-index: -2;
 }
