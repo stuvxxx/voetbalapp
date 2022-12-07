@@ -60,10 +60,14 @@ export default {
 
 <style scoped>
 .roadmap-wrapper {
+  background-color: rgb(31, 30, 29);
   height: 500px;
   margin: 0 auto;
   width: 300px;
   text-align: left;
   overflow-y: auto;
+}
+.roadmap-wrapper h3 {
+  margin-left: 5px;
 }
 </style>
