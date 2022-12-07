@@ -592,7 +592,7 @@ export default {
             },
             {
               minuut: 78,
-              score: "thuis",
+              score: "uit",
               goalwie: "Bonkie Drie",
             },
           ],
