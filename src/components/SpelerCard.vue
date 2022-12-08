@@ -157,7 +157,7 @@ export default {
       avatars.map((x) => {
         console.log(x.firstChild);
         if (x.firstChild.id !== playerId) {
-          x.style.transform = "translateY(600px)";
+          x.style.transform = "translateY(2000px)";
         }
       });
     },
