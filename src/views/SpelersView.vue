@@ -220,7 +220,7 @@ export default {
 <style scoped>
 .spelers-wrapper {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;

@@ -19,6 +19,8 @@ export default {
 .header-wrapper {
   width: 100%;
   display: flex;
+  visibility: hidden;
+  height: 0;
 }
 .image-placeholder {
   background-color: #131313;
