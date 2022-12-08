@@ -233,23 +233,26 @@ export default {
   margin-top: 1px;
 }
 .font-large {
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 800;
 }
 .player-details {
   color: rgb(255, 117, 47);
   position: absolute;
   background: rgb(12, 11, 11);
-  width: inherit;
   height: inherit;
+  width: 100vw;
   margin-top: 165px;
-  margin-left: 10px;
   text-align: left;
   font-family: "Orbitron", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0;
   z-index: -3;
   transition: opacity 1.5s;
+}
+
+.player-details p {
+  margin-left: 10px;
 }
 span {
   color: white;
