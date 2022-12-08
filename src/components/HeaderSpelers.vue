@@ -21,8 +21,9 @@ export default {
   display: flex;
 }
 .image-placeholder {
-  min-width: 80px;
-  min-height: 110px;
+  background-color: #131313;
+  min-width: 120px;
+  min-height: 165px;
   margin: 12.5px;
   -webkit-box-shadow: inset 4px 4px 15px 0px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);

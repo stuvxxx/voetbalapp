@@ -60,6 +60,7 @@ export default {
 
 <style scoped>
 .roadmap-wrapper {
+  margin-top: 20px;
   background-color: rgb(31, 30, 29);
   height: 500px;
   margin: 0 auto;

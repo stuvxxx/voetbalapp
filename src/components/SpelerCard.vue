@@ -33,7 +33,7 @@
     class="player-details"
     id="player-details"
   >
-    <p>Volledige naam: <span id="playerName"></span></p>
+    <p class="margin-details">Volledige naam: <span id="playerName"></span></p>
     <p>Leeftijd: <span id="playerAge"></span></p>
     <p>Positie: <span id="playerPos"></span></p>
     <p>Voet: <span id="playerVoet"></span></p>
@@ -200,8 +200,8 @@ export default {
   box-sizing: border-box;
 }
 .speler-avatar-wrapper {
-  height: 68px;
-  width: 48px;
+  height: 102px;
+  width: 72px;
   font-family: "Orbitron", sans-serif;
   font-size: 8px;
   margin: 5px;
@@ -213,19 +213,19 @@ export default {
   transition: font-size 1.5s, font-weight 1.5s, transform 1.5s;
 }
 .image-wrapper {
-  background-size: 110px;
+  background-size: 165px;
   margin: 0 auto;
-  height: 55px;
-  width: 40px;
-  -webkit-box-shadow: inset 4px 4px 15px 0px #000000,
+  height: 72.5px;
+  width: 60px;
+  -webkit-box-shadow: inset 4px 4px 15px 0px #131313,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 4px 4px 7px 0px #000000;
+  box-shadow: 4px 4px 7px 0px #131313;
   animation-duration: 5s;
   transition: height 1.5s, width 1.5s, transform 1.5s, box-shadow 1.5s;
 }
 .large {
-  height: 110px;
-  width: 80px;
+  height: 165px;
+  width: 120px;
   box-shadow: none;
 }
 
@@ -239,10 +239,10 @@ export default {
 .player-details {
   color: rgb(255, 117, 47);
   position: absolute;
-  background-color: rgb(31, 30, 29);
-  width: 250px;
-  height: 300px;
-  margin-top: 135px;
+  background: rgb(12, 11, 11);
+  width: inherit;
+  height: inherit;
+  margin-top: 165px;
   margin-left: 10px;
   text-align: left;
   font-family: "Orbitron", sans-serif;
@@ -261,5 +261,8 @@ span {
   background: rgb(221, 27, 27);
   opacity: 0;
   z-index: -2;
+}
+.margin-details {
+  margin-top: 50px;
 }
 </style>

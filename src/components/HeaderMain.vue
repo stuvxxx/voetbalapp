@@ -1,7 +1,4 @@
 <template>
-  <div class="header">
-    <h1>FIT<br /><span class="zeven">7</span></h1>
-  </div>
   <div class="header-title" id="aap"></div>
 </template>
 
@@ -28,6 +25,7 @@ export default {
 }
 .header-title {
   margin-top: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-family: "Orbitron", sans-serif;
   letter-spacing: 10px;

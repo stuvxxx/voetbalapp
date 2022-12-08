@@ -219,14 +219,12 @@ export default {
 </script>
 <style scoped>
 .spelers-wrapper {
-  background-color: rgb(31, 30, 29);
   margin: 0 auto;
   margin-top: 20px;
-  width: 300px;
-  height: 475px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: flex-start;
+  justify-content: center;
 }
 </style>
