@@ -203,7 +203,7 @@ export default {
   height: 102px;
   width: 72px;
   font-family: "Orbitron", sans-serif;
-  font-size: 8px;
+  font-size: 12px;
   margin: 5px;
   cursor: pointer;
   transition: transform 3s;
@@ -259,8 +259,8 @@ span {
 }
 .cheatdiv {
   position: absolute;
-  width: inherit;
-  height: inherit;
+  width: 100vw;
+  height: 100vh;
   background: rgb(221, 27, 27);
   opacity: 0;
   z-index: -2;
