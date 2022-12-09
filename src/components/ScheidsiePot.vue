@@ -1,7 +1,7 @@
 <template>
   <div class="stats-items-wrapper">
     <div class="pot-wrapper">
-      Stand van de pot: <span class="geld-stand">15,-</span>
+      Stand van de pot: <span class="geld-stand">170,-</span>
       <div class="pot-details" id="pot-details">
         <div class="pot-in">
           <h3>In:</h3>
@@ -9,8 +9,10 @@
           <p>15x15 <span class="geld-in">225,-</span></p>
           <p class="text-small">Tikkie 10/10/2022</p>
           <p>12x15 <span class="geld-in">180,-</span></p>
+          <p class="text-small">Tikkie 07/12/2022</p>
+          <p>12x20 <span class="geld-in">240,-</span></p>
           <hr />
-          <p>totaal <span class="geld-in">405,-</span></p>
+          <p>totaal <span class="geld-in">645,-</span></p>
         </div>
         <div class="pot-uit">
           <h3>Af:</h3>
@@ -18,8 +20,10 @@
           <p><span class="geld-uit">320,-</span> 8x40</p>
           <p class="text-small">Jamal aflasting</p>
           <p><span class="geld-uit">70,-</span>1x30 1x40</p>
+          <p class="text-small">Nw. ballen</p>
+          <p><span class="geld-uit">85,-</span></p>
           <hr />
-          <p><span class="geld-uit">390,-</span>totaal</p>
+          <p><span class="geld-uit">475,-</span>totaal</p>
         </div>
       </div>
     </div>
